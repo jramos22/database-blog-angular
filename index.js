@@ -6,10 +6,13 @@ const PORT = process.env.PORT || 3900;
 //mongoose.set('useFindAndModify', false);
 mongoose.Promise = global.Promise;
 mongoose
-	.connect(process.env.DATABASE, {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-	})
+	.connect(
+		'mongodb+srv://zangetsu22cr:Joseda199922@cluster0.2zqnv.mongodb.net/api_rest_blog?retryWrites=true&w=majority',
+		{
+			useNewUrlParser: true,
+			useUnifiedTopology: true,
+		}
+	)
 	.then(() => {
 		console.log('La coneccion a la base de datos se a ejecutado bien');
 
