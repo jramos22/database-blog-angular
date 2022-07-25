@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3900;
 //mongoose.set('useFindAndModify', false);
 mongoose.Promise = global.Promise;
 mongoose
-	.connect(process.env.DATABASE_URL, {
+	.connect(process.env.DATABASE, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
