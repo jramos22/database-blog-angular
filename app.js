@@ -34,5 +34,3 @@ app.use('/api', article_routes);
 
 //Exportar modulo (fichero actural)
 module.exports = app;
-
-//mongodb+srv://zangetsu22cr:Joseda199922@cluster0.2zqnv.mongodb.net/?retryWrites=true&w=majority
